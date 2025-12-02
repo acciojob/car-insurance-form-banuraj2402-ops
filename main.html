@@ -8,6 +8,91 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	
+    <h1>Car Insurance Registration Form</h1>
+
+    <form method="POST">
+
+        <div>
+            <label for="name">Name</label>
+            <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                required
+            >
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required
+            >
+        </div>
+        <div>
+            <label>Gender</label><br>
+            
+            <input id="gender_male" name="gender" type="radio" value="male" required>
+            <label for="gender_male">Male</label>
+            
+            <input id="gender_female" name="gender" type="radio" value="female">
+            <label for="gender_female">Female</label>
+            
+            <input id="gender_other" name="gender" type="radio" value="other">
+            <label for="gender_other">Other</label>
+        </div>
+        <div>
+            <label for="cars">Car Brands</label>
+            <select 
+                id="cars" 
+                name="cars" 
+            >
+                <option value="">-- Select Car Brand --</option>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Mercedes">Mercedes</option>
+            </select>
+        </div>
+        <div>
+            <label for="carage">Car Age</label>
+            <input 
+                type="number" 
+                id="carage" 
+                name="carage" 
+                required
+                min="0"
+            >
+        </div>
+        <div>
+            <label for="dop">Date of Purchase</label>
+            <input 
+                type="date" 
+                id="dop" 
+                name="dop" 
+                required
+            >
+        </div> 
+        <div>
+            <label for="password">Password</label>
+            <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                required
+            >
+        </div>
+
+        <div>
+            <button 
+                type="submit" 
+            >
+                Submit Registration
+            </button>
+        </div>
+    </form>
+
     <script type="text/javascript" src="./script.js">
 </script>
 
